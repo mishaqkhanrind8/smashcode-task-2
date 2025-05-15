@@ -5,41 +5,103 @@
  <!-- meta information --> 
   <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Developer" content="Muhammad Ishaq Khan Author of Pixel Pioneers Learners,
+    <meta http-equiv="Developer" content="Muhammad Ishaq Khan,
      contact: 03021905493 Lives in Multan, Pakistan," />
     <meta http-equiv="pragma" content="dveloper, front-end dveloper" />
     <meta http-equiv="expires" content="dec-12, 2040" />
-  <meta name="description" content="Periodic Table HTML Created By Muhammad IShaq Khan 03021905493
+  <meta name="description" content="Periodic Table HTML Created By Muhammad Ishaq Khan 03021905493
   District Lodhran Multan Pakistan" />
-<meta name="keywords" content="Periodic Tabel, SmashCode, Intership, 2025" />
+<meta name="keywords" content="Periodic Table, SmashCode, Internship, 2025" />
  <title>Periodic Table of Elements</title>
 
  <!-- CSS Section -->
  <style>
 
-.divider { display: flex; align-items: center; justify-content: center; width: 150px;margin-bottom:-11px; }
-.divider-line { position: relative; height: 1px; background-color: #000; flex-grow: 1;margin-bottom: -32px }
-.divider-line.left::before { content: ""; position: absolute; background: #000; width: 1px; height: 10px; left:0;margin-bottom: 0; }
-.divider-line.right::after { content: ""; position: absolute; background: #000; width: 1px; height: 10px; right: 0; } 
-.divider-text {font-size:11px;margin-bottom:-32px;}
+.divider {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 150px;margin-bottom:-11px;
+}
+.divider-line {
+ position: relative;
+ height: 1px;
+ background-color: #000;
+ flex-grow: 1;
+ margin-bottom: -32px
+}
+.divider-line.left::before {
+ content: "";
+ position: absolute;
+ background: #000;
+ width: 1px;
+ height: 10px;
+ left:0;
+ margin-bottom: 0;
+}
+.divider-line.right::after {
+ content: "";
+ position: absolute;
+ background: #000;
+ width: 1px;
+ height: 10px;
+ right: 0;
+} 
+.divider-text {
+ font-size:11px;
+ margin-bottom:-32px;
+}
 .text-center {text-align: center;}
-table td {border: 1px solid #000;width: 51px;height: 51px;}
+ td {
+ border: 1px solid #000;
+ width: 51px;
+ height: 51px;
+}
 .sup {font-size: 11px;}
-.small {font-size: 10px;margin: 0;padding: 0;} 
-table tr td div {text-align: center;padding:0 3px;}
-table td.empty {border: none;}
-.null {margin-top: 32px;font-size: 10px;}
-.text-center{text-align: center;}
-p {line-height: 8px;}
-h2 {line-height: 5px;padding-top: 50px;margin-bottom: -1px;}
-.padding-end {padding-right: 25px;padding-left: 10px;}
-.mt-10 {margin-top: 10px;}
-tr#p4 td :nth-child1 :nth-child2 {border-top: 3px solid #000;}
-table {border-collapse: collapse;user-select: none; /* user select none property */ }
-.hidden {visibility: hidden;}
-img {margin:0 auto -16px;padding:0 auto;}
-#img-padding-start {padding-left:7px;}
-.text-right {margin-left: 70%; margin-bottom: -85px;}
+.small {
+ font-size: 10px;
+ margin: 0;padding: 0;
+} 
+table tr td div {
+ text-align: center;
+ padding:0 3px;
+}
+.empty {
+ border: none;
+}
+.null {
+ margin-top: 32px;
+ font-size: 10px;
+}
+.text-center{
+ text-align: center;
+}
+p {
+ line-height: 8px;
+}
+h2 {
+ line-height: 5px;
+ padding-top: 50px;
+ margin-bottom: -1px;
+}
+.padding-end {
+ padding-right: 25px;
+ padding-left: 10px;
+}
+.mt-10 {
+ margin-top: 10px;
+}
+table {
+ border-collapse: collapse;
+ user-select: none; /* user select none property */
+}
+.hidden {
+ visibility: hidden;
+}
+.text-right {
+ margin-left: 70%;
+ margin-bottom: -85px; /* nagative margin to display footer  */
+}
 @media screen and (min-width: 410px) {
 .text-right {
 width: 250px;
@@ -79,7 +141,7 @@ margin-right: auto;
 margin-left: 63%;
   }
 }
-/* this media quiry used for laptops */
+/* this media query is used for laptops */
 @meida screen and (min-width:1366px) {
 table {margin: auto;}
 .text-right {
@@ -93,18 +155,15 @@ Margin-left: 57%;
 </head>
 <body>
  <h2 class="text-center">Periodic table of the Elements</h2>
-<div class="relative"> 
 <div class="text-right">
   <p><a href="">https://chemistry.about.com</a></p>
   <p>@ 2012 Todd Helmenstine</p>
   <p>About Chemistry</p>
  </div>
-</div>
- <!-- title="Deuterium" -->
 
-<!-- I am using User Select None for This Table -->
+<!-- I am using user-select: none property for This Table -->
 
- <table class="text-right2">
+ <table>
   <tr>
     <td class="empty">
       <div class="null">A1</div>
@@ -118,7 +177,7 @@ Margin-left: 57%;
 <td title="Hydrogen">
   <div class="sup">1</div>
   <div>H</div>
-  <div class="small">1,00794</div>
+  <div class="small">1.00794</div>
 </td>
 <td class="empty">
   <div class="null">2A</div>
@@ -142,50 +201,50 @@ Margin-left: 57%;
 <td title="Helium">
   <div class="sup">2</div>
   <div >He</div>
-  <div class="small">4,002602</div>
+  <div class="small">4.002602</div>
 </td>
   </tr>
 <tr id="p2">  
 <td title="Lithium">
   <div class="sup">3</div>
   <div >Li</div>
-  <div class="small">6,941</div>
+  <div class="small">6.941</div>
 </td>
    <td title="Beryllium" >
       <div class="sup">4</div>
   <div >Be</div>
-  <div class="small">9,012182</div>
+  <div class="small">9.012182</div>
    </td>
    <td class="empty" colspan="10"></td>
    <td title="Boron">
      <div class="sup">5</div>
   <div >B</div>
-  <div class="small">10,911</div>
+  <div class="small">10.911</div>
    </td>
    <td title="Carbon">
      <div class="sup">6</div>
   <div >C</div>
-  <div class="small">12,0107</div>
+  <div class="small">12.0107</div>
    </td>
    <td title="Nitrogen">
      <div class="sup">7</div>
   <div >N</div>
-  <div class="small">14,0067</div>
+  <div class="small">14.0067</div>
    </td>
    <td title="Oxygen">
      <div class="sup">8</div>
   <div >O</div>
-  <div class="small">15,9994</div>
+  <div class="small">15.9994</div>
    </td>
    <td title="Fluorine">
      <div class="sup">9</div>
   <div >F</div>
-  <div class="small">18,9984032</div>
+  <div class="small">18.9984032</div>
    </td>
    <td id="Ne" title="Neon">
      <div class="sup">10</div>
   <div >Ne</div>
-  <div class="small">20,1797</div>
+  <div class="small">20.1797</div>
    </td>
   </tr>
 
@@ -193,7 +252,7 @@ Margin-left: 57%;
    <td title="Sodium">
          <div class="sup">11</div>
   <div >Na</div>
-  <div class="small">22,989769</div>
+  <div class="small">22.989769</div>
    </td>
    <td title="Magnesium">
      <div class="sup">12</div>
@@ -234,32 +293,32 @@ Margin-left: 57%;
    <td title="Aluminium">
        <div class="sup">13</div>
   <div >Ai</div>
-  <div class="small">26,9815386</div>
+  <div class="small">26.9815386</div>
    </td>
    <td title="Silicon">
        <div class="sup">14</div>
   <div >Si</div>
-  <div class="small">28,0855</div>
+  <div class="small">28.0855</div>
    </td>
    <td title="Phosphorus">
        <div class="sup">15</div>
   <div >P</div>
-  <div class="small">30,973762</div>
+  <div class="small">30.973762</div>
    </td>
    <td title="Sulfur">
        <div class="sup">16</div>
   <div >S</div>
-  <div class="small">32,065</div>
+  <div class="small">32.065</div>
    </td>
    <td title="Chlorine">
        <div class="sup">17</div>
   <div >Ci</div>
-  <div class="small">35,453</div>
+  <div class="small">35.453</div>
    </td>
     <td title="Chlorine">
          <div class="sup">18</div>
   <div >Ar</div>
-  <div class="small">39,948</div>
+  <div class="small">39.948</div>
     </td>
   </tr>
 
