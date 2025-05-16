@@ -17,20 +17,91 @@
  <!-- CSS Section -->
  <style>
 
-.divider {
+  table {
+ border-collapse: collapse;
+ user-select: none; /* user select none property */
+}
+  .text-center {
+  text-align: center;
+ }
+
+ td {
+ border: 1px solid #000;
+ width: 51px;
+ height: 51px;
+}
+  
+.sup {
+ font-size: 11px;
+}
+
+  .small {
+ font-size: 10px;
+ margin: 0;padding: 0;
+} 
+
+  table tr td div {
+ text-align: center;
+ padding:0 3px;
+}
+
+  .empty {
+ border: none;
+}
+
+  .null {
+ margin-top: 32px;
+ font-size: 10px;
+}
+
+  .text-center{
+ text-align: center;
+}
+
+  p {
+ line-height: 8px;
+}
+
+  h2 {
+ line-height: 5px;
+ padding-top: 50px;
+ margin-bottom: -1px;
+}
+
+  .padding-end {
+ padding-right: 25px;
+ padding-left: 10px;
+}
+
+  .mt-10 {
+ margin-top: 10px;
+}
+
+.hidden {
+ visibility: hidden;
+}
+
+  .text-right {
+ margin-left: 70%;
+ margin-bottom: -85px; /* nagative margin to display footer  */
+}
+
+  .divider {
  display: flex;
  align-items: center;
  justify-content: center;
  width: 150px;margin-bottom:-11px;
 }
-.divider-line {
+
+  .divider-line {
  position: relative;
  height: 1px;
  background-color: #000;
  flex-grow: 1;
  margin-bottom: -32px
 }
-.divider-line.left::before {
+
+  .divider-line.left::before {
  content: "";
  position: absolute;
  background: #000;
@@ -39,7 +110,8 @@
  left:0;
  margin-bottom: 0;
 }
-.divider-line.right::after {
+
+  .divider-line.right::after {
  content: "";
  position: absolute;
  background: #000;
@@ -47,100 +119,53 @@
  height: 10px;
  right: 0;
 } 
-.divider-text {
+
+  .divider-text {
  font-size:11px;
  margin-bottom:-32px;
 }
-.text-center {text-align: center;}
- td {
- border: 1px solid #000;
- width: 51px;
- height: 51px;
-}
-.sup {font-size: 11px;}
-.small {
- font-size: 10px;
- margin: 0;padding: 0;
-} 
-table tr td div {
- text-align: center;
- padding:0 3px;
-}
-.empty {
- border: none;
-}
-.null {
- margin-top: 32px;
- font-size: 10px;
-}
-.text-center{
- text-align: center;
-}
-p {
- line-height: 8px;
-}
-h2 {
- line-height: 5px;
- padding-top: 50px;
- margin-bottom: -1px;
-}
-.padding-end {
- padding-right: 25px;
- padding-left: 10px;
-}
-.mt-10 {
- margin-top: 10px;
-}
-table {
- border-collapse: collapse;
- user-select: none; /* user select none property */
-}
-.hidden {
- visibility: hidden;
-}
-.text-right {
- margin-left: 70%;
- margin-bottom: -85px; /* nagative margin to display footer  */
-}
-@media screen and (min-width: 410px) {
+
+  @media screen and (min-width: 410px) {
 .text-right {
 width: 250px;
 margin-bottom: -85px;
 padding: 0;
 margin-left: 90%;
 margin-right: auto;
-}
-}
+} }
+  
 @media screen and (min-width: 768px) {
 .text-right {
 width: 250px;
 margin-bottom: -85;
 margin-left: 70%;
-}
-}
-@media screen and (min-width: 912px) {
+} }
+
+  @media screen and (min-width: 912px) {
    table {margin: auto;}
   .text-right {
     width: 250px;
 margin-left: 67%;
    margin-bottom: -85px;
-  }
-}@media screen and (min-width: 1024px) {
+  } }
+  
+  @media screen and (min-width: 1024px) {
    table {margin: auto;}
   .text-right {
     width: 250px;
 margin-bottom: -85px;
 margin-left: 66%;
-  }
-}@media screen and (min-width: 1280px) {
+  } }
+  
+  @media screen and (min-width: 1280px) {
 table {margin: auto;}  
 .text-right {
 width: 300px;
 float: none;
 margin-right: auto;
 margin-left: 63%;
-  }
-}
+} }
+  
 /* this media query is used for laptops */
 @meida screen and (min-width:1366px) {
 table {margin: auto;}
@@ -148,17 +173,25 @@ table {margin: auto;}
 width: 250px;
 margin-right: auto;
 Margin-left: 57%;
-}
-}
+} }
 
 </style>
 </head>
 <body>
- <h2 class="text-center">Periodic table of the Elements</h2>
-<div class="text-right">
-  <p><a href="">https://chemistry.about.com</a></p>
-  <p>@ 2012 Todd Helmenstine</p>
-  <p>About Chemistry</p>
+ <h2 class="text-center">
+  Periodic table of the Elements
+ </h2>
+
+ <div class="text-right">
+  <p>
+   <a href="">https://chemistry.about.com</a>
+  </p>
+  <p>
+   @ 2012 Todd Helmenstine
+  </p>
+  <p>
+   About Chemistry
+  </p>
  </div>
 
 <!-- I am using user-select: none property for This Table -->
@@ -326,92 +359,92 @@ Margin-left: 57%;
    <td title="Potassium">
            <div class="sup">19</div>
   <div >K</div>
-  <div class="small">39,983</div>
+  <div class="small">39983</div>
    </td>
    <td title="Calcium">
            <div class="sup">20</div>
   <div >Ca</div>
-  <div class="small">40,078</div>
+  <div class="small">40.078</div>
    </td>
    <td title="Scandium">
            <div class="sup">21</div>
   <div >Sc</div>
-  <div class="small">44,955912</div>
+  <div class="small">44.955912</div>
    </td>
    <td title="Titanium">
            <div class="sup">22</div>
   <div >Ti</div>
-  <div class="small">47,867</div>
+  <div class="small">47.867</div>
    </td>
    <td title="Vanadium">
      <div class="sup">23</div>
   <div >V</div>
-  <div class="small">50,9415</div>
+  <div class="small">50.9415</div>
 </td>
    <td title="Chromium">
            <div class="sup">24</div>
   <div >Cr</div>
-  <div class="small">51,9961</div>
+  <div class="small">51.9961</div>
    </td>
    <td title="Manganese">
            <div class="sup">25</div>
   <div >Mn</div>
-  <div class="small">54,938045</div>
+  <div class="small">54.938045</div>
    </td>
    <td title="Iron">
            <div class="sup">26</div>
   <div >Fe</div>
-  <div class="small">55,645</div>
+  <div class="small">55.645</div>
    </td>
    <td title="Cobalt">
            <div class="sup">27</div>
   <div >Co</div>
-  <div class="small">58,933195</div>
+  <div class="small">58.933195</div>
    </td>
    <td title="Nickel">
            <div class="sup">28</div>
   <div >Ni</div>
-  <div class="small">58,6934</div>
+  <div class="small">58.6934</div>
    </td>
    <td title="Copper">
            <div class="sup">29</div>
   <div >Cu</div>
-  <div class="small">63,546</div>
+  <div class="small">63.546</div>
    </td>
    <td title="Zinc">
            <div class="sup">30</div>
   <div >Zn</div>
-  <div class="small">65,38</div>
+  <div class="small">65.38</div>
    </td>
    <td title="Gallium">
            <div class="sup">31</div>
   <div >Ga</div>
-  <div class="small">69,723</div>
+  <div class="small">69.723</div>
    </td>
    <td title="Germanium">
            <div class="sup">32</div>
   <div >Ge</div>
-  <div class="small">72,64</div>
+  <div class="small">72.64</div>
    </td>
    <td title="Arsenic">
            <div class="sup">33</div>
   <div >As</div>
-  <div class="small">74,92160</div>
+  <div class="small">74.92160</div>
    </td>
    <td title="Selenium">
            <div class="sup">34</div>
   <div >Se</div>
-  <div class="small">78,96</div>
+  <div class="small">78.96</div>
    </td>
    <td title="Bromine">
            <div class="sup">35</div>
   <div >Br</div>
-  <div class="small">79,904</div>
+  <div class="small">79.904</div>
    </td>
    <td title="Krypton">
            <div class="sup">36</div>
   <div >Kr</div>
-  <div class="small">83,798</div>
+  <div class="small">83.798</div>
    </td>
   </tr>
 
@@ -419,32 +452,32 @@ Margin-left: 57%;
    <td title="Rubidium">
      <div class="sup">37</div>
   <div >Rb</div>
-  <div class="small">85,4678</div>
+  <div class="small">85.4678</div>
    </td>
    <td title="Strontium">
      <div class="sup">38</div>
   <div >Sr</div>
-  <div class="small">87,62</div>
+  <div class="small">87.62</div>
    </td>
    <td title="Yttrium">
      <div class="sup">39</div>
   <div >Y</div>
-  <div class="small">88,90585</div>
+  <div class="small">88.90585</div>
    </td>
    <td title="Zirconium">
      <div class="sup">40</div>
   <div >Zr</div>
-  <div class="small">91,224</div>
+  <div class="small">91.224</div>
    </td>
    <td title="Niobium">
      <div class="sup">41</div>
   <div >Nb</div>
-  <div class="small">92,90638</div>
+  <div class="small">92.90638</div>
    </td>
    <td title="Molybdenum">
      <div class="sup">42</div>
   <div >Mo</div>
-  <div class="small">95,96</div>
+  <div class="small">95.96</div>
    </td>
    <td title="Technetium">
      <div class="sup">43</div>
@@ -454,59 +487,59 @@ Margin-left: 57%;
    <td title="Ruthenium">
      <div class="sup">44</div>
   <div >Ru</div>
-  <div class="small">101,07</div>
+  <div class="small">101.07</div>
    </td>
    <td title="Rhodium">
      <div class="sup">45</div>
   <div >Rh</div>
-  <div class="small">102,90550</div>
+  <div class="small">102.90550</div>
    </td>
    <td title="Palladium">
      <div class="sup">46</div>
   <div >Pd</div>
-  <div class="small">106,42</div>
+  <div class="small">106.42</div>
    </td>
    <td title="Silver">
      <div class="sup">47</div>
   <div >
       <div >Ag</div>
   </div>
-  <div class="small">107,8682</div>
+  <div class="small">107.8682</div>
    </td>
    <td title="Cadmium">
      <div class="sup">48</div>
   <div >Cd</div>
-  <div class="small">112,411</div>
+  <div class="small">112.411</div>
    </td>
    <td title="Indium">
      <div class="sup">49</div>
   <div >In</div>
-  <div class="small">114,818</div>
+  <div class="small">114.818</div>
    </td>
    <td title="Tin">
      <div class="sup">50</div>
   <div >Sn</div>
-  <div class="small">118,710</div>
+  <div class="small">118.710</div>
    </td>
    <td title="Antimony">
      <div class="sup">51</div>
   <div >Sb</div>
-  <div class="small">121,760</div>
+  <div class="small">121.760</div>
    </td>
    <td title="Tellurium">
      <div class="sup">52</div>
   <div >Te</div>
-  <div class="small">127,60</div>
+  <div class="small">127.60</div>
    </td>
    <td title="Iodine">
      <div class="sup">53</div>
   <div >I</div>
-  <div class="small">126,90447</div>
+  <div class="small">126.90447</div>
    </td>
    <td title="Xenon">
      <div class="sup">54</div>
   <div >Xe</div>
-  <div class="small">131,293</div>
+  <div class="small">131.293</div>
    </td>
   </tr>
 
@@ -514,12 +547,12 @@ Margin-left: 57%;
    <td title="Caesium">
      <div class="sup">55</div>
   <div >Cs</div>
-  <div class="small">132,9054519</div>
+  <div class="small">132.9054519</div>
    </td>
    <td title="Barium">
      <div class="sup">56</div>
   <div >Ba</div>
-  <div class="small">137,327</div>
+  <div class="small">137.327</div>
    </td>
    <td class="">
      <div class="sup">57-71</div>
@@ -529,37 +562,37 @@ Margin-left: 57%;
    <td title="Hafnium">
     <div class="sup">72</div>
   <div >Hf</div>
-  <div class="small">178,49</div>
+  <div class="small">178.49</div>
 </td>
    <td title="Tantalum">
      <div class="sup">73</div>
   <div >Ta</div>
-  <div class="small">180,94788</div>
+  <div class="small">180.94788</div>
    </td>
    <td title="Tungsten">
      <div class="sup">74</div>
   <div >W</div>
-  <div class="small">183,84</div>
+  <div class="small">183.84</div>
    </td>
    <td title="Rhenium">
      <div class="sup">75</div>
   <div >Re</div>
-  <div class="small">186,207</div>
+  <div class="small">186.207</div>
    </td>
    <td title="Osmium">
      <div class="sup">76</div>
   <div >Os</div>
-  <div class="small">190,23</div>
+  <div class="small">190.23</div>
    </td>
    <td title="Iridium">
      <div class="sup">77</div>
   <div >Ir</div>
-  <div class="small">192,217</div>
+  <div class="small">192.217</div>
    </td>
    <td title="Platinum">
      <div class="sup">78</div>
   <div >Pt</div>
-  <div class="small">195,084</div>
+  <div class="small">195.084</div>
    </td>
    <td title="Gold">
      <div class="sup">79</div>
@@ -584,7 +617,7 @@ Margin-left: 57%;
    <td title="Bismuth">
      <div class="sup">83</div>
   <div >Bi</div>
-  <div class="small">208,98040</div>
+  <div class="small">208.98040</div>
    </td>
    <td title="Polonium">
      <div class="sup">84</div>
